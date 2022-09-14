@@ -1,31 +1,27 @@
-#include "holberton.h"
+#include "main.h"
 
 
 
 /**
  *
- *  * add - adds two integers and returns the result
+ *  * add - adding it up
  *
- *   * @a: int to be added to b
+ *   * @a: first integer
  *
- *    * @b: int to be added to a
+ *    * @b: second integer
  *
- *     * Return: sum of a and b
+ *     *
  *
- *      */
+ *      * Return: sum of both integers
+ *
+ *       */
+
+
 
 int add(int a, int b)
 
 {
 
-		int c;
-
-
-
-			c = a + b;
-
-
-
-				return (c);
+		return (a + b);
 
 }

@@ -1,63 +1,75 @@
-#include <stdio.h>
+#include "main.h"
 
-#include "holberton.h"
+#include "6-abs.c"
+
+#include <stdio.h>
 
 
 
 /**
  *
- *  * print_to_98 - prints all natural numbers from n to 98,
+ *  * print_to_98 - prints numbers
  *
- *   * followed by a new line
+ *   *
  *
- *    * @n: print from this number
+ *    * @n: integer to be passed
  *
- *     */
+ *     *
+ *
+ *      */
+
+
 
 void print_to_98(int n)
 
 {
 
-		int i, j;
+		int i;
 
 
 
-			if (n <= 98)
+			if (n > 98)
 
 					{
 
-								for (i = n; i <= 98; i++)
+								for (i = n; i >= 98; i--)
 
 											{
 
-															if (i != 98)
+															printf("%d", i);
 
-																				printf("%d, ", i);
+																		if (i != 98)
 
-																		else if (i == 98)
+																						{
 
-																							printf("%d\n", i);
+																											printf(", ");
+
+																														}
 
 																				}
 
-									} else if (n >= 98)
+									} else
 
 											{
 
-														for (j = n; j >= 98; j--)
+														for (i = n; i <= 98; i++)
 
 																	{
 
-																					if (j != 98)
+																					printf("%d", i);
 
-																										printf("%d, ", j);
+																								if (i != 98)
 
-																								else if (j == 98)
+																												{
 
-																													printf("%d\n", j);
+																																	printf(", ");
+
+																																				}
 
 																										}
 
 															}
+
+										printf("\n");
 
 }
