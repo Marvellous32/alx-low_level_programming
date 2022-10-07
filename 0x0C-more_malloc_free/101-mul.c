@@ -91,7 +91,7 @@ void init(char *str, int l)
 	int i;
 
 	for (i = 0; i < l; i++)
-	str[i] = '0';
+		str[i] = '0';
 	str[i] = '\0';
 }
 /**
@@ -123,7 +123,7 @@ int main(int argc, char *argv[])
 	if (a == NULL)
 	{
 		for (ti = 0; e[ti]; ti++)
-			putchar(e[ti]);
+			_putchar(e[ti]);
 		exit(98);
 	}
 	init(a, ln - 1);
